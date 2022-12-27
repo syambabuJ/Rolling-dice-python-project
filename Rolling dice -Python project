@@ -1,0 +1,16 @@
+name=input("Enter your name: ")
+import random
+x=1
+y=0
+while x==1:
+    Rolling_Number=int(input("Enter a number between 1 and 6: "))
+    Wishing_Number=random.randint(1,6)
+    print("static number: ",Wishing_Number)
+    if Rolling_Number==Wishing_Number:
+        y=Rolling_Number+y
+        print("KEEP GOING",name)
+    else:
+        print("TRY AGAIN!!",name)
+    x=int(input("1 for play again or 2 for exit: "))
+print(name,"YOUR SCORE:",y)
+ 
